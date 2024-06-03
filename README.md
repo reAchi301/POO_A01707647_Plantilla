@@ -13,3 +13,12 @@ Referencias:
 
 - Director deportivo: Funciones y requisitos. (n.d.). UNIR Colombia. Retrieved May 16, 2024, from https://colombia.unir.net
   /actualidad-unir/director-deportivo/
+
+
+CORRECCIONES
+-----------------------------------------------------------------------------------------------------------------------------
+03-06-2024
+Se juntan todos los archivos .cpp dentro de un .h
+Se implementa de manera correcta el polimorfismo y clases abstractas
+Falta comentar el código de manera adecuada
+-----------------------------------------------------------------------------------------------------------------------------
