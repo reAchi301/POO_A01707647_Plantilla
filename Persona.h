@@ -1,3 +1,10 @@
+/*
+*
+En esta clase definimos de que manera funcionan los métodos utilizados en la clase principal, creando la clase abstracta Persona con sus clases
+hijas Jugador y Entrenador, mismas que van a aportar valores a los atributos de las mencionadas anteriormente para dar un mejor funcionamiento del programa
+Se aplica sobreescritura, sobrecarga y la implementación de clases abstractas.
+*/  
+
 #ifndef PERSONA_H
 #define PERSONA_H
 #include <string>
@@ -7,17 +14,19 @@
 using namespace std;
 
 class Persona{
-
+//Declaramos los atributos de la clase padre Persona como protected para que las clases hijas puedan usarlas
 protected:
 string nombrePersona;
 int edad;
 float salario;
 int titulos;
 
+//Declaramos los métodos públicos
 public:
 Persona();
 Persona(string NP, int E, float S, int T);
 
+//Método creado como abstracto, obligando al usuario a utilizarlo exclusivamente en las clases hijas de Persona
 virtual string to_string() = 0;
 
 void setNomP(string);
@@ -30,13 +39,16 @@ void setTitP(int);
 int getTitP()const;
 };
 
+//Clase Jugador heredera de Persona
 class Jugador : public Persona{
+//Declaramos los atributos como privados
 private:
 
 int goles;
 int asistencias;
 string posicion;
 
+//Declaramos métodos públicos
 public:
 Jugador();
 Jugador(string NP, int E, float S, int T, int G, int A, string P);
@@ -48,7 +60,7 @@ int getAsistencias();
 void setPosicion(string);
 string getPosicion(); 
 
-string to_string();
+string to_string(); //Función abstracta que será sobreescrita
 };
 
 class Entrenador : public Persona {
