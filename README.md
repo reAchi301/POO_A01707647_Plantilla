@@ -22,3 +22,7 @@ Se juntan todos los archivos .cpp dentro de un .h
 Se implementa de manera correcta el polimorfismo y clases abstractas
 Falta comentar el código de manera adecuada
 -----------------------------------------------------------------------------------------------------------------------------
+11-06-2024
+Se implementa interacción con el usuario, ademas de corregir la implementación
+de polimorfismo, eliminando algunas funciones y modificando otras
+-----------------------------------------------------------------------------------------------------------------------------
