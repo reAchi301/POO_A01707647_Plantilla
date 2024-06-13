@@ -1,14 +1,16 @@
 /*
-Autor: Ricardo Calzada Hernández
-
+*Autor: Ricardo Calzada Hernández
+*Dentro de esta clase es donde ocurre el principal funcionamiento del programa en conjunto, 
+*dentro de la misma encontramos funciones que permiten la impresión de los jugadores del equipo,
+*muestran sus estadísticas, así como ofrecer una interfaz con interacción al usuario.
 */
 
-#ifndef EQUIPO_H
+#ifndef EQUIPO_H  
 #define EQUIPO_H
 #include <iostream>
 #include <string>
 
-#include "Persona.h"
+#include "Persona.h" //Biblioteca con los objetos a usar
 #include <iostream>
 #include <string>
 #include <sstream> //biblioteca para poder usar stringstream
@@ -137,11 +139,12 @@ void Equipo::CreaEquipo(){
  */
 
 void Equipo::muestraEmpleados() {
-  for (int i = 0; i < empleados; i++)
-    cout << plantilla[i] -> to_string();
+  for (int i = 0; i < empleados; i++) //ciclo que itera por el arreglo empleados 
+    cout << plantilla[i] -> to_string(); //imprime los elementos del arreglo mediante la función to_string sobreescrita en las clases hijas de la clase Persona
 }
 
 
+//Setters y getters de los atributos de la clase Equipo
 void Equipo::setNombre(string nom){
   nombre = nom;
 }
